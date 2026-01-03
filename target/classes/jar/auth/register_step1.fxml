@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<StackPane styleClass="root-gradient" stylesheets="@register.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jar.auth.RegisterStep1Controller">
+    
+    <VBox alignment="CENTER">
+        <VBox maxWidth="400" spacing="25" styleClass="white-card">
+            <VBox spacing="8">
+                <Text styleClass="title-text" text="Créer un compte" />
+                <Text styleClass="subtitle-text" text="Étape 1 sur 2 : Informations personnelles" />
+                <StackPane alignment="CENTER_LEFT">
+                    <Rectangle height="6" styleClass="progress-bar-track" width="320" />
+                    <Rectangle height="6" styleClass="progress-bar-fill" width="160" />
+                </StackPane>
+            </VBox>
+
+            <VBox spacing="15">
+                <TextField fx:id="txtNom" promptText="Nom &amp; Prénom" styleClass="soft-input" />
+                <TextField fx:id="txtUsername" promptText="Nom d'utilisateur" styleClass="soft-input" />
+                <TextField fx:id="txtEmail" promptText="Adresse Email" styleClass="soft-input" />
+                <TextField fx:id="txtTel" promptText="Numéro de téléphone" styleClass="soft-input" />
+            </VBox>
+
+            <Button maxWidth="Infinity" onAction="#goToStep2" prefHeight="45" styleClass="btn-primary" text="Continuer" />
+            
+            <HBox alignment="CENTER">
+                <Button onAction="#backToLogin" styleClass="btn-text" text="J'ai déjà un compte" />
+            </HBox>
+        </VBox>
+    </VBox>
+</StackPane>

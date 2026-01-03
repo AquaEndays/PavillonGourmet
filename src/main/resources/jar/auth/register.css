@@ -1,0 +1,82 @@
+/* FOND GLOBAL : Dégradé "Sunset" (Chaleureux et Moderne) */
+.root-gradient {
+    -fx-background-color: linear-gradient(to bottom right, #FF8008, #FFC837); 
+}
+
+/* LA CARTE CENTRALE (Effet Papier Flottant) */
+.white-card {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 30, 0, 0, 10); /* Ombre diffuse */
+    -fx-padding: 40;
+    -fx-min-width: 380;
+}
+
+/* TITRES */
+.title-text {
+    -fx-fill: #333333;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.subtitle-text {
+    -fx-fill: #888888;
+    -fx-font-size: 13px;
+}
+
+/* BARRE DE PROGRESSION */
+.progress-bar-track {
+    -fx-fill: #f0f0f0;
+    -fx-arc-width: 10;
+    -fx-arc-height: 10;
+}
+.progress-bar-fill {
+    -fx-fill: linear-gradient(to right, #FF8008, #FFC837);
+    -fx-arc-width: 10;
+    -fx-arc-height: 10;
+}
+
+/* CHAMPS DE TEXTE (Style "Soft UI") */
+.soft-input {
+    -fx-background-color: #f4f6f8; /* Gris très léger */
+    -fx-text-fill: #333;
+    -fx-prompt-text-fill: #a0a0a0;
+    -fx-background-radius: 12;
+    -fx-border-color: transparent;
+    -fx-border-radius: 12;
+    -fx-padding: 12;
+    -fx-font-size: 14px;
+}
+.soft-input:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #FF8008; /* Bordure Orange au focus */
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 128, 8, 0.15), 10, 0, 0, 0);
+}
+
+/* BOUTON PRINCIPAL (Dégradé Pillule) */
+.btn-primary {
+    -fx-background-color: linear-gradient(to right, #FF8008, #FFC837);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-background-radius: 50; /* Complètement arrondi */
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 128, 8, 0.3), 10, 0, 0, 5);
+}
+.btn-primary:hover {
+    -fx-translate-y: -2;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 128, 8, 0.5), 15, 0, 0, 5);
+}
+
+/* BOUTON RETOUR */
+.btn-text {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+.btn-text:hover {
+    -fx-text-fill: #FF8008;
+    -fx-underline: true;
+}

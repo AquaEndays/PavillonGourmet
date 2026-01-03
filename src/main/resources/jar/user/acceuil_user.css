@@ -1,0 +1,71 @@
+/* FOND DYNAMIQUE */
+.main-bg {
+    -fx-background-color: linear-gradient(to bottom right, #0f172a, #1e293b);
+}
+
+/* HEADER */
+.header-bar {
+    -fx-background-color: rgba(30, 41, 59, 0.7);
+    -fx-background-radius: 0 0 30 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 15, 0, 0, 5);
+}
+
+/* CARTES (Les anciens boutons) */
+.menu-card {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 25;
+    -fx-border-color: rgba(255, 255, 255, 0.05);
+    -fx-border-radius: 25;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+    -fx-transition: 0.3s;
+}
+
+.menu-card:hover {
+    -fx-background-color: #2d3a4f;
+    -fx-translate-y: -10;
+    -fx-border-color: #fbbf24;
+    -fx-effect: dropshadow(three-pass-box, rgba(251, 191, 36, 0.2), 20, 0, 0, 0);
+}
+
+/* CARTE SPÉCIALE : RÉSERVATION (Dorée) */
+.card-gold {
+    -fx-background-color: linear-gradient(to bottom right, #fbbf24, #d97706);
+    -fx-text-fill: #0f172a;
+}
+.card-gold:hover {
+    -fx-background-color: linear-gradient(to bottom right, #fcd34d, #fbbf24);
+    -fx-effect: dropshadow(three-pass-box, rgba(251, 191, 36, 0.4), 25, 0, 0, 0);
+}
+
+/* PORTEFEUILLE (Le petit badge solde) */
+.wallet-badge {
+    -fx-background-color: rgba(251, 191, 36, 0.1);
+    -fx-border-color: #fbbf24;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+/* DÉCONNEXION */
+.btn-logout {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ef4444;
+    -fx-border-color: #ef4444;
+    -fx-border-radius: 25;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.btn-logout:hover {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+}/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 janv. 2026, 17:04:07
+    Author     : JEndays
+*/
+

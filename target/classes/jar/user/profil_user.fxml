@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" style="-fx-background-color: #0f0f0f; -fx-padding: 40;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jar.user.ProfilUserController">
+    <Label text="MON PROFIL" textFill="#fccd4d" style="-fx-font-size: 24; -fx-font-weight: bold;" />
+    
+    <VBox maxWidth="350" spacing="15" style="-fx-background-color: #1a1a1a; -fx-padding: 25; -fx-background-radius: 15;">
+        <Label text="Nom complet" textFill="GRAY" />
+        <TextField fx:id="txtNom" style="-fx-background-color: #252525; -fx-text-fill: white;" />
+        
+        <Label text="Email" textFill="GRAY" />
+        <TextField fx:id="txtEmail" style="-fx-background-color: #252525; -fx-text-fill: white;" />
+        
+        <HBox spacing="10">
+            <Label text="Solde actuel :" textFill="GRAY" />
+            <Label fx:id="lblSolde" text="0.00 €" textFill="#00ff88" style="-fx-font-weight: bold;" />
+        </HBox>
+
+        <Button text="METTRE À JOUR" onAction="#handleUpdate" maxWidth="Infinity" style="-fx-background-color: #fccd4d; -fx-text-fill: black; -fx-font-weight: bold; -fx-cursor: hand;" />
+    </VBox>
+
+    <Label text="Contact Admin : admin@restaurant.com" textFill="#555" style="-fx-font-size: 11;" />
+    <Button text="Retour" onAction="#retour" style="-fx-background-color: transparent; -fx-text-fill: white;" />
+</VBox>

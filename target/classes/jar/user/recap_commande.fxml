@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" prefHeight="600.0" prefWidth="450.0" 
+      style="-fx-background-color: #1a1a1a;" xmlns="http://javafx.com/javafx/8" 
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="jar.user.Recap_commandeController">
+    
+    <padding>
+        <Insets bottom="30.0" left="40.0" right="40.0" top="40.0" />
+    </padding>
+
+    <Label text="VOTRE COMMANDE" style="-fx-text-fill: #fccd4d; -fx-font-size: 24px; -fx-font-weight: bold; -fx-letter-spacing: 2px;" />
+    
+    <Separator prefWidth="200.0" style="-fx-background-color: #fccd4d; -fx-opacity: 0.3;" />
+
+    <ListView fx:id="listViewCommande" prefHeight="350.0" prefWidth="370.0" 
+              style="-fx-background-color: transparent; -fx-border-color: #fccd4d; -fx-border-radius: 10; -fx-background-radius: 10;" 
+              stylesheets="@../../style.css" />
+
+    <VBox spacing="10.0" style="-fx-background-color: #262626; -fx-padding: 20; -fx-background-radius: 15; -fx-border-color: #404040; -fx-border-radius: 15;">
+        <HBox alignment="CENTER_LEFT">
+            <Label text="Total à payer :" style="-fx-text-fill: white; -fx-font-size: 16px;" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="lblTotalFinal" text="0.00 €" style="-fx-text-fill: #fccd4d; -fx-font-size: 20px; -fx-font-weight: bold;" />
+        </HBox>
+        
+        <HBox alignment="CENTER_LEFT">
+            <Label text="Solde après achat :" style="-fx-text-fill: #aaaaaa; -fx-font-size: 14px;" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="lblNouveauSolde" text="0.00 €" style="-fx-text-fill: #5cb85c; -fx-font-size: 14px;" />
+        </HBox>
+    </VBox>
+
+    <HBox spacing="20.0" alignment="CENTER">
+        <Button fx:id="btnAnnuler" onAction="#annuler" text="ANNULER" 
+                style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-color: white; -fx-border-radius: 20; -fx-cursor: hand;" prefWidth="150"/>
+        <Button fx:id="btnPayer" onAction="#confirmerPaiement" text="PAYER MAINTENANT" 
+                style="-fx-background-color: #fccd4d; -fx-text-fill: black; -fx-font-weight: bold; -fx-background-radius: 20; -fx-cursor: hand;" prefWidth="200"/>
+    </HBox>
+</VBox>

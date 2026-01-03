@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="800.0" prefWidth="1280.0" styleClass="root-panel" stylesheets="@admin_style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jar.admin.AdminDashboardController">
+    
+    <VBox prefWidth="280.0" styleClass="sidebar">
+        <VBox alignment="CENTER" prefHeight="150.0" spacing="5.0">
+            <Label text="SPIRIT" textFill="WHITE">
+                <font><Font name="System Bold" size="28.0" /></font>
+            </Label>
+            <Label text="ADMINISTRATION" textFill="#f59e0b">
+                <font><Font size="14.0" /></font>
+            </Label>
+        </VBox>
+        
+        <VBox spacing="5.0" VBox.vgrow="ALWAYS">
+            <Button onAction="#showHome" prefWidth="280" styleClass="side-btn" text="📊  Tableau de Bord" />
+            <Button onAction="#showTables" prefWidth="280" styleClass="side-btn" text="🪑  Gestion des Salles" />
+            <Button onAction="#showPlats" prefWidth="280" styleClass="side-btn" text="🍽️  Gestion du Menu" />
+            <Button onAction="#showClients" prefWidth="280" styleClass="side-btn" text="👥  Clients" />
+            <Button onAction="#showReservations" prefWidth="280" styleClass="side-btn" text="📅  Réservations" />
+        </VBox>
+        
+        <VBox alignment="CENTER" prefHeight="80.0">
+            <Button onAction="#logout" style="-fx-background-color: #ef4444; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20; -fx-cursor: hand;" text="Déconnexion" />
+        </VBox>
+    </VBox>
+    
+    <StackPane fx:id="contentArea" HBox.hgrow="ALWAYS" style="-fx-padding: 40;" />
+</HBox>

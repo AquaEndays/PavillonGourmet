@@ -1,0 +1,79 @@
+.main-container {
+    -fx-background-color: #0f172a;
+    -fx-padding: 30;
+}
+
+.page-title {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+}
+
+/* CARTE DE FORMULAIRE */
+.form-card {
+    -fx-background-color: rgba(30, 41, 59, 0.5);
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 20;
+    -fx-padding: 25;
+}
+
+/* INPUTS ET COMBOBOX */
+.input-field, .combo-box {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: white;
+    -fx-border-color: #334155;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 8;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: #1e293b;
+}
+
+/* BOUTON FLUO */
+.btn-gold {
+    -fx-background-color: linear-gradient(to right, #22c55e, #10b981);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(34, 197, 94, 0.4), 10, 0, 0, 0);
+}
+
+/* TABLEVIEW MODERNE */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255,255,255,0.1);
+    -fx-border-radius: 15;
+}
+
+.table-view .column-header {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #94a3b8;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #0f172a;
+    -fx-text-fill: white;
+    -fx-border-color: rgba(255,255,255,0.05) transparent transparent transparent;
+}
+
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #1e293b;
+}
+
+/* BOUTONS ACTIONS */
+.btn-action-gold { -fx-background-color: #f59e0b; -fx-text-fill: white; -fx-background-radius: 5; }
+.btn-action-red { -fx-background-color: #ef4444; -fx-text-fill: white; -fx-background-radius: 5; }/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 janv. 2026, 17:40:07
+    Author     : JEndays
+*/
+

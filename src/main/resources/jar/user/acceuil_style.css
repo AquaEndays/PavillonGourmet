@@ -1,0 +1,21 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 déc. 2025, 17:27:35
+    Author     : JEndays
+*/
+
+/* Effet au survol des boutons secondaires */
+.button:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: 0.3s;
+}
+
+/* Les boutons noirs deviennent plus brillants au survol */
+.button[style*="#2a2a2a"]:hover {
+    -fx-background-color: #3a3a3a;
+    -fx-border-width: 2;
+}

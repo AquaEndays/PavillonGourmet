@@ -1,0 +1,78 @@
+/* FOND : Vert Émeraude Sombre pour le contraste prestige */
+.root-pane {
+    -fx-background-color: #064e3b; 
+}
+
+/* LA CARTE : Style "Papeterie de Luxe" */
+.login-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 30, 0, 0, 15);
+}
+
+/* TITRE : Lettrage élégant */
+.title-text {
+    -fx-text-fill: #064e3b;
+    -fx-font-family: "Georgia", serif; /* Style menu de restaurant */
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}
+
+.subtitle-text {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 13px;
+    -fx-font-style: italic;
+}
+
+/* CHAMPS : Minimalisme Chic */
+.field-label {
+    -fx-text-fill: #374151;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.input-container {
+    -fx-background-color: #f9fafb;
+    -fx-background-radius: 0; /* On va utiliser une bordure uniquement en bas */
+    -fx-border-color: transparent transparent #d1d5db transparent;
+    -fx-border-width: 0 0 2 0;
+    -fx-text-fill: #111827;
+}
+
+.input-container:focused {
+    -fx-border-color: transparent transparent #fbbf24 transparent; /* Devient doré au focus */
+}
+
+/* BOUTON : Dégradé Forestier */
+.login-button {
+    -fx-background-color: linear-gradient(to right, #065f46, #047857);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(4, 120, 87, 0.3), 10, 0, 0, 4);
+}
+
+.login-button:hover {
+    -fx-background-color: #064e3b;
+    -fx-translate-y: -1;
+}
+
+/* LIENS */
+.footer-link {
+    -fx-text-fill: #047857;
+    -fx-font-weight: bold;
+    -fx-underline: false;
+}
+
+.footer-link:hover {
+    -fx-text-fill: #fbbf24;
+}/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 janv. 2026, 16:36:46
+    Author     : JEndays
+*/
+
