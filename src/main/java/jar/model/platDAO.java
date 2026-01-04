@@ -5,16 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class platDAO {
-// Identifiants PUBLIC (Networking sur ta capture image_69784c.png)
-private final String HOST = "centerbeam.proxy.rlwy.net";
-private final String PORT = "56002"; 
-private final String DB_NAME = "railway";
-private final String USER = "root";
-private final String PASS = "yiIgkCQkFEnwoaXdwdsqMNvrfInSmtII";
+// On demande à Java de lire les variables système de Railway
+private final String HOST = System.getenv("MYSQLHOST");
+private final String PORT = System.getenv("MYSQLPORT");
+private final String DB_NAME = System.getenv("MYSQLDATABASE");
+private final String USER = System.getenv("MYSQLUSER");
+private final String PASS = System.getenv("MYSQLPASSWORD");
 
-// URL JDBC de combat (incluant les correctifs de sécurité pour MySQL 8)
-private final String URL = "jdbc:mysql://" + HOST + ":" + PORT + "/" + DB_NAME + 
-                           "?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC";
+// L'URL se construit toute seule maintenant !
+private final String URL = "jdbc:mysql://" + HOST + ":" + PORT + "/" + DB_NAME + "?allowPublicKeyRetrieval=true&useSSL=false";
 
     private Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASS);
